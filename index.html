@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+
+    <style>
+      @font-face { font-family: gidole; src: url('fonts/gidole.otf'); } 
+      html { font-family: gidole }
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      p { font-size: 20px }
+    </style>
+
+  </head>
+  <body id="top">
+    <div class="navbar-fixed">
+      <nav class="blue-grey darken-4">
+        <div class="nav-wrapper container">
+          <a href="res/propic.jpg" class="brand-logo right"><img src="res/propic.jpg" width="26" alt="" class="circle responsive-img"></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#top">varshith</a></li>
+            <li><a href="#me">me</a></li>
+            <li><a href="#pique">pique</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="intro" class="white">
+      <div class="container row">
+        <div class="col s8">
+          <div class="valign-wrapper">
+          <h4 class="valign center">
+            <a name="intro">varshith sreeramdass</a>
+          </h4>
+          </div>
+          <p>
+            Hello!
+          </p>
+          <p>
+            I am a fourth year undergraduate student studying Computer Science at IIT Bombay. This webpage is a trove of information about me.
+          </p>
+          <p>
+            Feel free to contact me for any information or queries.
+          </p>
+        </div>
+  
+        <div class="col s4">
+
+          <div class="card">
+            <div class="card-image">
+              <a href="res/propic.jpg"><img src="res/propic.jpg"></a>
+            </div>
+          </div>
+        
+        </div>
+              
+      </div>
+    </div>
+
+    <div id="me" class="teal lighten-3">
+      <div class="container">
+      <h4><a name="me">me</a></h4>
+      <p>
+        Brought up and lived most of my life in Hyderabad.
+      </p>
+      <p>
+        Passionate about programming, data science and in a constant effort to learn new things and improve.
+      </p>
+      <p>
+        Always up for an interesting conversation to explore the people around and the self.
+      </p>
+      <p>
+        Ever in pursuit of good food and company.
+      </p>
+      </div>
+    </div>
+
+    <div id="pique" class="white">
+      <div class="container">
+      <h4 align="right"><a name="pique">pique</a></h4>
+      <p align="right">
+        Learn from mistakes, they say. Machine Learning is the way.
+      </p>
+      <p align="right">
+        Dance is really just an expression. An art of impression.
+      </p>
+      <p align="right">
+        Journey though time to journey the self.
+      </p>
+
+      </div>
+    </div>
+
+    <div id="projects" class="teal lighten-3">
+      <div class="container">
+      <h4><a name="projects">projects</a></h4>
+      <p>
+        The rather professional side of the coin.
+      </p>
+
+      <ul class="collapsible popout" data-collapsible="expandable">
+
+        <li>
+          <div class="collapsible-header">Predictive Music Synthesis  <div class="chip">Prof. Ganesh Ramakrishnan</div><div class="chip">March '17</div></div>
+          <div class="collapsible-body white">
+            <p>
+              Developed and trained a generative model to learn patterns in musical notes and produce music in an iterative manner using a sliding window approach
+            </p>
+            <p>
+              The generative model involved use of LSTM Cells and Dense Layers to capture long term patterns in the sequences of notes in their piano roll representation
+            </p>
+            <p>
+             Performed tempographic and spectrographic analysis on the generated music to analyse the effectiveness of the design of the model
+            </p>
+            <p align="left">
+              <a href="https://github.com/tastelessjolt/aarohi">!project link</a>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">Theory of Transducers  <div class="chip">Prof. Krishna Subramaniam</div><div class="chip">May '17</div></div>
+          <div class="collapsible-body white">
+            <p>
+              Pursued a constructive proof for the closure property of two way deterministic finite state transducers under composition
+            </p>
+            <p>
+              Studied and analysed the research paper on equivalence of expressibility of MSO Tranductions and two way deterministic finite state transducers, and the proof techniques involved
+            </p>
+            <p>
+             Worked on the proposal of a model of SSTs (Streaming String Transducers), equivalent to Ï‰ SSTs, modelling relations of infinite strings, but under BÃ¼chi acceptance
+            </p>
+            <!-- <p align="left"> -->
+              <!-- <a href="#">!project link</a> -->
+            <!-- </p> -->
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">Choreography using ML  <div class="chip">Yahoo! Hackathon</div><div class="chip">March '17</div></div>
+          <div class="collapsible-body white">
+            <p>
+              Developed a sequence-to-sequence model and trained it to map musical sequences to dance step sequences to be able to generate dance sequences for previously unseen musical sequences
+            </p>
+            <p>
+              The model involved use of Recurrent Neural Networks which learnt patterns in the note sequences in theirMFCC representation
+            </p>
+            <p>
+             Performed tempographic and spectrographic analysis on the generated music to analyse the effectiveness of the design of the model
+            </p>
+            <!-- <p align="left"> -->
+              <!-- <a href="#">!project link</a> -->
+            <!-- </p> -->
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">Dextera Domini  <div class="chip">ITSP</div><div class="chip">July '16</div></div>
+          <div class="collapsible-body white">
+            <p>
+              An elaborate contraption to capture hand gestures and process data to recognise patterns and perform system operations on an android device.
+            </p>
+            <p>
+              Involves data stream processing using dynamic time warping algorithms.
+            </p>
+            <p>
+             Use of sensors to capture nuances of a gesture (tilt, acceleration, finger-flex) using microprocessors and various modules.
+            </p>
+            <p>
+             Further efforts to implement pattern recognition using ML.
+            </p>
+            <p align="left">
+              <a href="https://github.com/tastelessjolt/DDC">!project link</a>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="collapsible-header">Feed'er  <div class="chip">Prof. Sharat Chandran</div><div class="chip">Nov '16</div></div>
+          <div class="collapsible-body white">
+            <p>
+              A course management system.
+            </p>
+            <p>
+              A django-based web portal for convenience in dealing with logistics (for course instructors) accompained by an android app (for students).
+            </p>
+            <p align="left">
+              <a href="https://github.com/varshiths/feeder-droid">!project link</a>
+            </p>
+
+          </div>
+        </li>
+      </ul>
+      
+      </div>
+    </div>
+
+    <div id="contact" class="white">
+      <div class="container">
+      <h4 class="center"><a name="contact">contact</a></h4>
+
+      <div class="row">
+        <div class="col s6 center">
+          <h5>e-mail</h5>
+          <ul>
+            <li>varshith.lfhs@gmail.com</li>
+            <li>varshiths@iitb.ac.in</li>
+            <li>varshiths@cse.iitb.ac.in</li>
+          </ul>
+        </div>
+        <div class="col s6">
+          <div class="row center">
+            <h5>others</h5>
+            <a href="https://www.facebook.com/varshithsrds"><img src="res/facebook.png" width="40"></a>
+            <a href="https://www.instagram.com/varshith.s"><img src="res/instagram.png" width="40"></a>
+            <a href="https://github.com/varshiths"><img src="res/github.png" width="40"></a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- </div> -->
+    <footer class="page-footer blue-grey darken-4">
+      <div class="footer-copyright">
+        <div class="container">
+        Varshith Sreeramdass | IIT Bombay | 2017
+        <a class="grey-text text-lighten-3 right" href="#top">To the top!</a>
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
