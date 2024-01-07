@@ -48,13 +48,10 @@
                 </div>
                 <div class="col-lg-8 col-md-6 order-1 order-xs-1 order-sm-1 order-md-0 order-lg-0">
                     <p>
-                        Hi! I'm a Master's student in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>, specializing in Computational Perception and Robotics.
+                        Hi! I'm a Master's student in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>, specializing in Computational Perception and Robotics. My research interests lie in Robot Learning and Human-Robot Interaction. Specifically, I am interested in efficient learning-based methods for building robots that are capable of acting in the real irregular world and collaborate with humans by exploring techniques related to representation learning, reinforcement learning, behavioral sciences, game theory and others.
                     </p>
                     <p>
-                        My research interests are in Robot Learning and Human-Robot Interaction. More specifically, I am interested in enabling efficient sensorimotor learning of robots acting in the real human world. I am currently a part of the <a href="https://core-robotics.gatech.edu/">CORE Robotics Lab</a>, working on creating robot agents that can effectively partner with humans in racquet sports.
-                    </p>
-                    <p>
-                        I was previously a Research Engineer in the <a href="https://www.honda.co.jp/robotics" target="_blank">robotics divison</a> of Honda R&D working on Deep Reinforcement Learning for Manipulation. I completed my undergrad from <a href="https://www.iitb.ac.in" target="_blank">IIT Bombay</a>, majoring in Computer Science and Engineering, where I worked on Out-of-distribution detection and Domain Adaptation in NLP with <a href="https://www.cse.iitb.ac.in/~sunita/" >Prof. Sunita Sarawagi</a> and <a href="https://www.cse.iitb.ac.in/~soumen/">Prof. Soumen Chakrabarti</a>.
+                        I am a part of the <a href="https://core-robotics.gatech.edu/">CORE Robotics Lab</a> led by Prof. <a href="https://www.cse.iitb.ac.in/~sunita/">Matthew Gombolay</a>, working on creating robot agents that can effectively partner humans in racquet sports. I was previously a Research Engineer at <a href="https://www.honda.co.jp/robotics" target="_blank">Honda R&D Robotics</a> working on deep reinforcement learning for dexterous manipulation. My undergraduate studies were at <a href="https://www.iitb.ac.in" target="_blank">IIT Bombay</a> in Computer Science and Engineering, where I worked on Out-of-distribution detection and Domain Adaptation in NLP with Prof. <a href="https://www.cse.iitb.ac.in/~sunita/">Sunita Sarawagi</a> and Prof. <a href="https://www.cse.iitb.ac.in/~soumen/">Soumen Chakrabarti</a>. I also interned at <a href="https://www.jp.honda-ri.com/en/">Honda Research Institute Japan</a> working on sign language translation.
                     </p>
                 </div>
             </div>
@@ -69,31 +66,31 @@
             <hr>
             <div class="row" id="publications">
                 <div class="col">
-                    <h2>Projects</h2>
+                    <h2>Projects and Publications</h2>
                     <ul class="pl">
                         <li>
-                            <b>Data-driven DRL for Dexterous InHand Manipulation</b>
+                            <b>Generalized Behavior Learning from Diverse Demonstrations</b>
                             <br/>
                             <b>Varshith Sreeramdass</b>,
-                            Akinobu Hayashi and
-                            Tadaaki Hasegawa.
+                            Rohan Paleja, Letian Chen, Sanne van Waveren and
+                            Matthew Gombolay.
                             <br/>
-                            Frontier Robotics, Honda R&D, 2021.
+                            First workshop on Out-of-Distribution Generalization in Robotics at CoRL 2023 (Oral).
                             <br/>
-                            [<a href="#" onclick="$('#honda_1_data_rl').toggle();return false;">Abstract</a>]
-                            [<a href="https://response.jp/article/2021/09/30/349938.html" target="_blank">Press Release</a>]
-                            [<a href="https://www.youtube.com/watch?v=tS9LL2oVbYI" target="_blank">Video</a>]
-                            <div id="honda_1_data_rl" class="abstract" style="display:true;">
+                            Georgia Institute of Technology, 2023.
+                            <br/>
+                            [<a href="#" onclick="$('#gatech_generalized').toggle();return false;">Abstract</a>]
+                            [<a href="https://openreview.net/forum?id=5uEkcZZCnk" target="_blank">Paper</a>]
+                            [<a href="https://github.com/CORE-Robotics-Lab/GSD" target="_blank">Code</a>]
+                            [<a href="https://varshiths.github.io/res/gsd_corlw_post.pdf" target="_blank">Poster</a>]
+                            <div id="gatech_generalized" class="abstract" style="display:true;">
                                 <div class="row align-items-center">
                                     <div class="col-md-3 text-center my-auto">
-                                        <img src="img/proto2_rl.jpg" alt="proto2_rl">
+                                        <img src="img/gsdw.png" alt="gsdw">
                                     </div>
                                     <div class="col-md-9">
                                         <p>
-                                        Learning dexterous manipulation directly on real robots is considerably difficult to do from scratch due to physical constraints. 
-                                        Applying Sim-to-Real is not straight forward and resource intensive. 
-                                        In this work, we employ data-driven reinforcement learning algorithms (DAPG, AWAC) to bootstrap learning with expert and suboptimal demos.
-                                        This ongoing work is currently able to achieve transitions among precision, tripod and power grasps with robustness towards object initialization noise.
+                                            Learning robot control policies through reinforcement learning can be challenging due to the complexity of designing rewards, which often result in unexpected behaviors. Imitation Learning overcomes this issue by using demonstrations to create policies that mimic expert behaviors. However, experts often demonstrate varied approaches to tasks. Capturing this variability is crucial for understanding and adapting to diverse scenarios. Prior methods capture variability by optimizing for behavior diversity alongside imitation. Yet, naive formulations of diversity can result in meaningless representation of latent factors, hindering generalization to novel scenarios. We propose Guided Strategy Discovery (GSD), a novel regularization method that specifically promotes expert-specified, task-relevant diversity. In the recovery of unseen expert behaviors, GSD improves 11% over the next best baseline across three continuous control tasks on average.
                                         </p>
                                     </div>
                                 </div>
@@ -101,23 +98,51 @@
                         </li>
                         <br/>
                         <li>
-                            <b>Hierarchical RL of Motor Primitive based Robotic Manipulation Control</b>
+                            <b>Structured Policies in Reinforcement Learning for Dexterous Manipulation</b>
                             <br/>
                             <b>Varshith Sreeramdass</b>,
-                            Takayuki Osa and
-                            Akinobu Hayashi.
+                            Akinobu Hayashi, Tadaaki Hasegawa
+                            and Takayuki Osa.
                             <br/>
-                            Frontier Robotics, Honda R&D, 2021.
+                            Honda R&D Robotics, 2022.
                             <br/>
-                            [<a href="#" onclick="$('#honda_dmp').toggle();return false;">Abstract</a>]
-                            <div id="honda_dmp" class="abstract" style="display:true;">
+                            [<a href="#" onclick="$('#honda_structured').toggle();return false;">Abstract</a>]
+                            [<a href="https://www.linkedin.com/posts/open-source-robotics-foundation_iros2022-ros-ugcPost-6990934827885625344-Rwto/" target="_blank">Demo, IROS '22</a>]
+                            <div id="honda_structured" class="abstract" style="display:true;">
                                 <div class="row align-items-center">
                                     <div class="col-md-3 text-center my-auto">
                                         <img src="img/pmdmp.png" alt="proto2_rl">
                                     </div>
                                     <div class="col-md-9">
                                         <p>
-                                            Exploration efficiency is a persistent problem in Robot Learning. Structure can be induced into exploration by using control systems such as Dynamic Motion Primitives (DMPs) as low level policies, and reasoning over/exploring in goal and duration spaces with gating policies. This work attempts to apply such Motor Primitive based Hierarchical Reinforcement Learning to tasks dealing with Maze Navigation, Box Pushing and InHand Manipulation. We also break the abstraction of the primitive being a single high level step, to study primitive interruption heuristics, duration inference mechanisms, optimization of inference costs, local planning and utilization of sub primitive trajectory information for frequent network updates.
+                                            For real world manipulation through reinforcement learning, exploration presents a significant challenge. Policies with incorporated structure can improve exploration efficiency, making learning feasible. This project explores structure in two forms: (1) parameterized motion primitives as low level policies, and gating policies operating in goal and duration spaces, and (2) residual policies that provide adjustments to actions from scripted base controllers. While simulation results showed that parameterized primitives accelerated learning, performance was limited in scenarios requiring quick, reactive behaviors. In comparison, residual policies showed significant improvements in sample efficiency and robustness to noisy initial conditions. Residual policies transferred through sim-to-real proved robust to an object initialization noise of 3mm in a beverage can-opening task requiring precise contacts and high torques.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <br/>
+                        <li>
+                            <b>Data-driven DRL for Dexterous InHand Manipulation</b>
+                            <br/>
+                            <b>Varshith Sreeramdass</b>,
+                            Akinobu Hayashi and
+                            Tadaaki Hasegawa.
+                            <br/>
+                            Honda R&D Robotics, 2021.
+                            <br/>
+                            [<a href="#" onclick="$('#honda_datarl').toggle();return false;">Abstract</a>]
+                            [<a href="https://global-honda.translate.goog/jp/tech/Avatar_robot/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="_blank">Press Release</a>]
+                            [<a href="https://www.youtube.com/watch?v=tS9LL2oVbYI" target="_blank">Video</a>]
+                            <div id="honda_datarl" class="abstract" style="display:true;">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-center my-auto">
+                                        <img src="img/proto2_rl.jpg" alt="proto2_rl">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>
+                                        Learning dexterous manipulation directly on real robots is considerably difficult to do from scratch due to extensive real robot deployment. Sim-to-real is not straight forward due to simulation fidelity.
+                                        In this work, we employed data-driven reinforcement learning algorithms (DAPG, AWAC) to learn from expert and suboptimal demonstrations. In tasks involving reorientation of objects for tool-use (transitions among precision, tripod and power grasps), we achieved robustness towards noise in object initialization.
                                         </p>
                                     </div>
                                 </div>
@@ -155,7 +180,7 @@
                                         the performance of the service model, through word substitutions.
                                         </p>
                                         <p>
-                                        Additionally, this project also surveyed in depth, methods to learn an optimal active learner using Reinforcement Learning.
+                                        Additionally, this project also surveyed in depth, methods to learn an optimal active learner using reinforcement learning.
                                         </p>
                                     </div>
                                 </div>
@@ -224,12 +249,12 @@
                         </li>
                         <br/>
                         <li>
-                            <b>Sign Language Synthesis with Adversarial Styling</b>
+                            <b>Sign Language Synthesis with Styling</b>
                             <br/>
                             <b>Varshith Sreeramdass</b> and
                             Heike Brock.
                             <br/>
-                            Summer Internship, HRI-JP, Summer 2018.
+                            Internship, HRI-JP, Summer 2018.
                             <br/>
                             [<a href="#" onclick="$('#intern_hrijp_sls').toggle();return false;">Abstract</a>]
                             [<a href="res/HRIJP.pdf" target="_blank">Report</a>]
@@ -281,7 +306,7 @@
                 <div class="row justify-content-center">
                     <div class="col-6 col-md text-left align-self-center">
                         <p class="h5 text-muted">
-                            Last updated in November 2022.
+                            Last updated in January 2024.
                         </p>
                     </div>
                     <div class="col-6 col-md text-right">
