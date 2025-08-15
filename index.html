@@ -48,10 +48,10 @@
                 </div>
                 <div class="col-lg-8 col-md-6 order-1 order-xs-1 order-sm-1 order-md-0 order-lg-0">
                     <p>
-                        Hi! I'm a PhD student at <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>, advised by Prof. <a href="https://core-robotics.gatech.edu/">Matthew Gombolay</a> and Prof. <a href="https://www.epic.gatech.edu/">Aaron Young</a>. My research lies in robot learning and human-robot interaction. I am honoured to be supported by the Robotics PhD fellowship from the <a href="https://research.gatech.edu/robotics">Institute of Robotics and Intelligent Machines</a>.
+                        Hi! I'm a PhD student at <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>, advised by Prof. <a href="https://core-robotics.gatech.edu/">Matthew Gombolay</a> and Prof. <a href="https://www.epic.gatech.edu/">Aaron Young</a>. My research lies in robot learning and human-robot interaction, currently exploring the domains of athletic robots and exoskeletons. I am honoured to be supported by the Robotics PhD fellowship from the <a href="https://research.gatech.edu/robotics">Institute of Robotics and Intelligent Machines</a>.
                     </p>
                     <p>
-                        I did my MS in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>, specializing in Computational Perception and Robotics. Before that, I was a Research Engineer at <a href="https://www.honda.co.jp/robotics" target="_blank">Honda R&D Robotics</a>. My undergraduate studies were at <a href="https://www.iitb.ac.in" target="_blank">IIT Bombay</a> in Computer Science and Engineering, where I was advised by Prof. <a href="https://www.cse.iitb.ac.in/~sunita/">Sunita Sarawagi</a> and Prof. <a href="https://www.cse.iitb.ac.in/~soumen/">Soumen Chakrabarti</a>. I also interned at <a href="https://www.jp.honda-ri.com/en/">Honda Research Institute Japan</a>.
+                        I did my MS in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>, specializing in Computational Perception and Robotics. Before that, I was a Research Engineer at <a href="https://www.honda.co.jp/robotics" target="_blank">Honda R&D Robotics</a>. My undergraduate studies were at <a href="https://www.iitb.ac.in" target="_blank">IIT Bombay</a> in Computer Science and Engineering advised by Prof. <a href="https://www.cse.iitb.ac.in/~sunita/">Sunita Sarawagi</a> and Prof. <a href="https://www.cse.iitb.ac.in/~soumen/">Soumen Chakrabarti</a>. I also interned at <a href="https://www.jp.honda-ri.com/en/">HRI Japan</a>.
                     </p>
                 </div>
             </div>
@@ -68,6 +68,36 @@
                 <div class="col">
                     <h2>Projects and Publications</h2>
                     <ul class="pl">
+                        <li>
+                            <b>Generalized Behavior Learning from Diverse Demonstrations</b>
+                            <br/>
+                            <b>Varshith Sreeramdass</b>,
+                            Rohan Paleja, Letian Chen, Sanne van Waveren and
+                            Matthew Gombolay.
+                            <br/>
+                            <b>
+                                International Conference on Learning Representations 2025 (Poster).
+                            </b>
+                            <br/>
+                            Georgia Institute of Technology, 2025.
+                            <br/>
+                            [<a href="#" onclick="$('#gatech_generalized').toggle();return false;">Abstract</a>]
+                            [<a href="https://openreview.net/pdf?id=Q7EjHroO1w" target="_blank">Paper</a>]
+                            [<a href="https://github.com/CORE-Robotics-Lab/GSD" target="_blank">Code</a>]
+                            [<a href="https://varshiths.github.io/res/gsd_iclr_poster.pdf" target="_blank">Poster</a>]
+                            <div id="gatech_generalized" class="abstract" style="display:true;">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-center my-auto">
+                                        <img src="img/gsd.png" alt="gsd">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>
+                                            Diverse behavior policies are valuable in domains requiring quick test-time adaptation or personalized human-robot interaction. Human demonstrations provide rich information regarding task objectives and factors that govern individual behavior variations, which can be used to characterize useful diversity and learn diverse performant policies. However, we show that prior work that builds naive representations of demonstration heterogeneity fails in generating successful novel behaviors that generalize over behavior factors. We propose Guided Strategy Discovery (GSD), which introduces a novel diversity formulation based on a learned task-relevance measure that prioritizes behaviors exploring modeled latent factors. We empirically validate across three continuous control benchmarks for generalizing to in-distribution (interpolation) and out-of-distribution (extrapolation) factors that GSD outperforms baselines in novel behavior discovery by ~21%. Finally, we demonstrate that GSD can generalize striking behaviors for table tennis in a virtual testbed while leveraging human demonstrations collected in the real world.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li>
                             <b>Generalized Behavior Learning from Diverse Demonstrations</b>
                             <br/>
