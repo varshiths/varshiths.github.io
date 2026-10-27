@@ -2,28 +2,53 @@ html {
     background-color: #fefefe;
 }
 
+body {
+    background-color: #fefefe;
+    font-family: Palatino, "EB Garamond", Georgia, "Times New Roman", serif;
+}
+
 body p, li {
     color: #454545;
     font-size: 20px;
 }
 
-body {
-    font-family: Palatino, "EB Garamond", Georgia, "Times New Roman", serif
-}
-
-.row:not(#publications) a {
+.prose a {
     text-decoration: underline;
 }
 
-.image-link {
-    text-decoration: none !important;
+.entries > li {
+    margin-bottom: 1.5rem;
 }
 
 .abstract {
+    margin-top: 0.5rem;
     padding: 2%;
     background-color: #f8f8f8;
 }
 
-.abstract img {
+.abstract p:last-child {
+    margin-bottom: 0;
+}
+
+.abstract img,
+.abstract video {
     width: 100%;
+}
+
+.abstract video {
+    max-height: 420px;
+    background-color: #000;
+}
+
+.abstract .col-md-3 {
+    margin-bottom: 0.5rem;
+}
+
+.abstract .caption {
+    font-size: 14px;
+}
+
+.logos img {
+    height: 60px;
+    margin: 0.5rem 0 0.5rem 1rem;
 }
